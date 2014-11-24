@@ -30,6 +30,21 @@ figure, show_keypoints(Iroofs,f);
 [f,d] = vl_sift(Iroofs,'PeakThresh', 0.08);
 figure, show_keypoints(Iroofs,f);
 
-%}
 [f,d] = vl_sift(Iroofs,'PeakThresh', 0.005);
+figure, show_keypoints(Iroofs,f);
+%}
+
+[f,d] = vl_sift(Iroofs,'PeakThresh', 0.04, 'EdgeThresh', 10);
+figure, show_keypoints(Iroofs,f);
+
+[f,d] = vl_sift(Iroofs,'PeakThresh', 0.04, 'EdgeThresh', 8);
+figure, show_keypoints(Iroofs,f);
+
+[f,d] = vl_sift(Iroofs,'PeakThresh', 0.04, 'EdgeThresh', 5);
+figure, show_keypoints(Iroofs,f);
+
+[f,d] = vl_sift(Iroofs,'PeakThresh', 0.04, 'EdgeThresh', 12);
+figure, show_keypoints(Iroofs,f);
+
+[f,d] = vl_sift(Iroofs,'PeakThresh', 0.04, 'EdgeThresh', 15);
 figure, show_keypoints(Iroofs,f);
