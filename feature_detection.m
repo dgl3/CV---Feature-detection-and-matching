@@ -17,7 +17,6 @@ figure, imshow(Iriver);
 %Show the descriptors
 figure, show_keypoints(Iriver,f);
 
-%}
 %Testing the SIFT detector
 [f,d] = vl_sift(Iroofs,'PeakThresh', 0.01);
 figure, show_keypoints(Iroofs,f);
@@ -29,4 +28,8 @@ figure, show_keypoints(Iroofs,f);
 figure, show_keypoints(Iroofs,f);
 
 [f,d] = vl_sift(Iroofs,'PeakThresh', 0.08);
+figure, show_keypoints(Iroofs,f);
+
+%}
+[f,d] = vl_sift(Iroofs,'PeakThresh', 0.005);
 figure, show_keypoints(Iroofs,f);
