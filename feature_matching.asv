@@ -30,7 +30,7 @@ figure, show_matches(Ia,Ib,fa,fb,matches);
 %Linear model
 d = fb(1:2,matches(2,:))-fa(1:2,matches(1,:));
 p = mean(d,2);
-figure, show_matches_linear_model(Ia,Ib,fa,fb,matches,p);
+show_matches_linear_model(Ia,Ib,fa,fb,matches,p);
 
 %Affine model
 i = size(matches, 2);
@@ -44,4 +44,4 @@ for j = 1:i,
     b = b + J'*d(1:2,j);
 end
 p = inv(A)*b;
-figure, show_matches_affine_model(Ia,Ib,fa,fb,matches,p);
+show_matches_affine_model(Ia,Ib,fa,fb,matches,p);
